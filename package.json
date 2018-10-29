@@ -4,9 +4,9 @@
   "description": "vue authentication package",
   "main": "build/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "mocha --require babel-core/register",
     "build": "babel ./src -d ./lib",
-    "lint": "eslint ./src",
+    "lint": "eslint ./src"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-latest": "^6.24.1",
-    "eslint": "^5.8.0"
+    "eslint": "^5.8.0",
+    "mocha": "^5.2.0"
   }
 }
